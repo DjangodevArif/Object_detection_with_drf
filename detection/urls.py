@@ -1,7 +1,7 @@
 from django.urls import path
-from django.views.generic import TemplateView
 from .views import *
 
 urlpatterns = [
     path('', index, name="root"),
+    path("detect_image", DetectImage.as_view(), name="image_detect")
 ]
